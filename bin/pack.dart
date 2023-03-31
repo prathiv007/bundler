@@ -11,7 +11,7 @@ Future<void> main(List<String> arguments) async {
   final outputFilePath = arguments[1];
   final password = arguments[2];
   if (password.length != 16) {
-    print("Password length must be 16 given password $password");
+    print("Password length must be 16 but given password $password is ${password.length}");
     exit(1);
   }
   final assetDir = Directory(assetPath);
